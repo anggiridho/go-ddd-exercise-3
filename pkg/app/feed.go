@@ -11,7 +11,7 @@ type FeedRepository interface {
 	Find(id int) (*Feed, error)
 }
 
-func NewFeed(Name string, URL string) *Feed {
+func CreateFeed(Name string, URL string) *Feed {
 
 	return &Feed{
 		Name: Name,
